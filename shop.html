@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Chitrali Dry Fruits</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #fdf8f2 0%, #f5ede4 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .about-hero h1 {
+            font-size: 2.8rem;
+            color: #2d2a24;
+        }
+        .about-hero p {
+            color: #5a554a;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 10px auto 0;
+        }
+        .about-story {
+            padding: 70px 0;
+        }
+        .about-story .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about-story img {
+            border-radius: 16px;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background: #e8dfd4;
+        }
+        .about-story h2 {
+            font-size: 2rem;
+            color: #2d2a24;
+            margin-bottom: 16px;
+        }
+        .about-story p {
+            color: #5a554a;
+            margin-bottom: 14px;
+            font-size: 1.02rem;
+        }
+        .about-story .highlight {
+            color: #8b2f1a;
+            font-weight: 600;
+        }
+        .about-values {
+            background: #f5f0ea;
+            padding: 70px 0;
+        }
+        .about-values h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #2d2a24;
+            margin-bottom: 40px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+        .value-card {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 16px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .value-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        }
+        .value-card i {
+            font-size: 2.6rem;
+            color: #8b2f1a;
+            margin-bottom: 14px;
+        }
+        .value-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #2d2a24;
+        }
+        .value-card p {
+            font-size: 0.92rem;
+            color: #5a554a;
+        }
+        .about-team {
+            padding: 70px 0;
+        }
+        .about-team h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #2d2a24;
+            margin-bottom: 40px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+        .team-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 12px;
+            background: #e8dfd4;
+        }
+        .team-card h4 {
+            font-size: 1.1rem;
+            color: #2d2a24;
+        }
+        .team-card p {
+            font-size: 0.9rem;
+            color: #8b2f1a;
+        }
+        @media (max-width: 768px) {
+            .about-story .container {
+                grid-template-columns: 1fr;
+            }
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Chitrali Dry Fruits</h1>
+                <span>Pure Taste from the Mountains</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== ABOUT HERO ========== -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Chitrali Dry Fruits</h1>
+            <p>Pure Taste from the Mountains — bringing the finest dry fruits from the valleys of Chitral to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- ========== OUR STORY ========== -->
+    <section class="about-story">
+        <div class="container">
+            <img src="images/about-story.jpg" alt="Chitral Valleys" />
+            <div>
+                <h2>Our Story</h2>
+                <p>
+                    <span class="highlight">Chitrali Dry Fruits</span> was born from a simple passion — 
+                    sharing the authentic, sun-dried treasures of the Chitral valleys with the rest of Pakistan.
+                </p>
+                <p>
+                    For generations, local farmers have perfected the art of drying fruits and nuts using 
+                    traditional methods passed down through centuries. We work directly with these farming 
+                    communities to bring you <span class="highlight">100% natural, preservative-free</span> 
+                    products that taste exactly as nature intended.
+                </p>
+                <p>
+                    From hand-sorted almonds to sun-dried apricots, every product tells a story of 
+                    <span class="highlight">quality, tradition, and authenticity</span>.
+                </p>
+                <a href="shop.html" class="btn-primary">Explore Our Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR VALUES ========== -->
+    <section class="about-values">
+        <div class="container">
+            <h2>What We Stand For</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Direct from Source</h3>
+                    <p>No middlemen. We buy directly from Chitrali orchards and highland farms.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>100% Natural</h3>
+                    <p>Sun-dried traditionally. No added sugar, preservatives, or artificial colors.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Freshness Sealed</h3>
+                    <p>Airtight pouches lock in flavour and crunch right before dispatch.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Nationwide Delivery</h3>
+                    <p>Fast shipping across Pakistan with Cash on Delivery available.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Empowering Farmers</h3>
+                    <p>Fair trade practices that support local Chitrali farming communities.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Quality You Can Trust</h3>
+                    <p>Every batch is carefully inspected to ensure the highest standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OUR TEAM ========== -->
+    <section class="about-team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="images/team1.jpg" alt="Team Member" />
+                    <h4>Ahmed Khan</h4>
+                    <p>Founder &amp; CEO</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team2.jpg" alt="Team Member" />
+                    <h4>Fatima Ali</h4>
+                    <p>Head of Operations</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team3.jpg" alt="Team Member" />
+                    <h4>Raza Shah</h4>
+                    <p>Quality Control</p>
+                </div>
+                <div class="team-card">
+                    <img src="images/team4.jpg" alt="Team Member" />
+                    <h4>Sara Ahmed</h4>
+                    <p>Customer Relations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEWSLETTER ========== -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get 10% off your first order</h2>
+            <p>Subscribe for seasonal offers and new arrivals from the mountains.</p>
+            <form id="newsletterFormAbout">
+                <input type="email" id="newsletterEmailAbout" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Chitrali Dry Fruits</h3>
+                    <p>Experience dry fruits and nuts, sourced in the valleys of Chitral. Choose Chitrali!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="shop.html">Featured</a></li>
+                        <li><a href="shop.html">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">My Account</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get in Touch</h4>
+                    <p><i class="fas fa-phone"></i> +92 8900211899</p>
+                    <p><i class="fas fa-globe"></i> www.chitralidryfruits.com</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                    <p><i class="fas fa-envelope"></i> info@chitralidryfruits.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Chitrali Dry Fruits. All rights reserved.</p>
+                <p>24/7 Customer Support Available</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Newsletter
+            const form = document.getElementById('newsletterFormAbout');
+            const email = document.getElementById('newsletterEmailAbout');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const val = email.value.trim();
+                    if (!val || !isValidEmail(val)) {
+                        showNotification('Please enter a valid email 📧');
+                        return;
+                    }
+                    localStorage.setItem('subscribedEmail', val);
+                    showNotification('Thank you for subscribing! 🎉');
+                    email.value = '';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
